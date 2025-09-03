@@ -35,3 +35,27 @@ table, th, td {
     border: 1px solid #ccc;
     padding: 8px;
 }
+
+
+
+/* Cambios realizados a algunas listas, textos y botones hecho por Javier */
+
+#temaInvestigacion ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: none;
+}
+
+#temaInvestigacion li {
+    cursor: pointer;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+#temaInvestigacion li ul li {
+    font-weight: normal;
+    margin-left: 20px;
+    cursor: default;
+}
+
+

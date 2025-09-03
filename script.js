@@ -14,3 +14,34 @@ function contarArticulos() {
     let filas = document.querySelectorAll("#articulos table tr").length - 1; // quitar cabecera, Este cambio fue hecho por janier
     alert("Se han cargado " + filas + " artículos en la tabla.");
 }
+
+
+/* Javier */
+// 1. Funcion para poder desplegar los temas de investigacion de forma animada al hacer click
+//    todo esto mediante una lista
+
+function mostrarArticulos(id) {
+    const lista = document.getElementById(id);
+    if (lista.style.display === "none") { // Se modifica el atributo de lista "display: none" --> No visible
+        lista.style.display = "block"; // Por el de lista "display:block" --> Mostrar el elemento como bloque en un contenedor
+    } else {
+        lista.style.display = "none";
+    }
+}
+
+// 2. Ocultar o mostrar la tabla de artículos
+function toggleTabla() {
+    const tabla = document.querySelector("#articulos table");
+    if (tabla.style.display === "none") {
+        tabla.style.display = "table";
+    } else {
+        tabla.style.display = "none";
+    }
+}
+
+// 3. Funcion para mostrar mensaje al pasar el mouse por encima del titulo
+
+function mensajeTitulo() {
+    alert("Este es el tema principal del proyecto");
+}
+

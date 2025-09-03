@@ -9,7 +9,7 @@
 <body>
     <!-- Este es el encabezado creado por janier  -->
     <header>
-        <h1>Impacto del COVID-19 en el Empleo</h1>
+        <h1 onmouseover="mensajeTitulo()">Impacto del COVID-19 en el Empleo</h1>
         <nav>
             <ul>
                 <li><a href="#tema">Tema</a></li>
@@ -19,33 +19,83 @@
         </nav>
     </header>
 
-    <!-- Sección principal creada por janier  -->
+
+
+    <!-- Sección principal creada por Janier y modificada por Javier -->
     <main>
         <section id="tema">
-            <h2>Tema de investigación</h2>
-            <p>Este sitio presenta información sobre el impacto del COVID-19 en unidades industriales medianas y grandes.</p>
+            <h2>Temas de investigación</h2> 
+            <ul>   
+                <li>
+                    <p>Este sitio reúne artículos académicos seleccionados por cada integrante del equipo, organizados para apoyar el análisis y la discusión de temas de interés.</p>
+                </li>
+
+                <!-- Lista de listas animadas para los temas de investigacion, fragmento creado por Javier -->
+                <ul id="temaInvestigacion">
+                                    <!-- Funcion(id) -->
+                    <li onclick="mostrarArticulos('janier')">
+                        <strong>Janier Farid Quiñones</strong>
+                        <ul id="janier">
+                            <li>Artículo 1: Impacto del COVID-19 en empresas</li>
+                            <li>Artículo 2:</li>
+                            <li>Artículo 3:</li>
+                        </ul>
+                    </li>
+
+                    <li onclick="mostrarArticulos('javier')">
+                        <strong>Javier Eduardo Barreto Rojas</strong>
+                        <ul id="javier">
+                            <li>Artículo 1:</li>
+                            <li>Artículo 2:</li>
+                            <li>Artículo 3:</li>
+                        </ul>
+                    </li>
+
+                    <li onclick="mostrarArticulos('andres')">
+                        <strong>Andrés</strong>
+                        <ul id="andres">
+                            <li>Artículo 1:</li>
+                            <li>Artículo 2:</li>
+                            <li>Artículo 3:</li>
+                        </ul>
+                    </li> 
+                </ul>
+            </ul>
         </section>
 
         <section id="articulos">
             <h2>Artículos seleccionados</h2>
             <table>
                 <tr>
+                    <th>Investigador</th>
                     <th>Título</th>
                     <th>Autores</th>
                     <th>Año</th>
                 </tr>
                 <tr>
+                    <td>Janier</td>
                     <td>A Model for Analyzing Impact of COVID-19 Prevalence...</td>
                     <td>Hamidi & Gholamian</td>
                     <td>2026</td>
                 </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
             </table>
+
         </section>
 
         <section id="equipo">
             <h2>Integrantes del equipo</h2>
             <p>Janier Farid Quiñones</p>
-            <p>Javier</p>
+            <p>Javier Eduardo Barreto Rojas</p>
             <p>Andres</p>
         </section>
     </main>
