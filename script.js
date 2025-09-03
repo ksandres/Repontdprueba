@@ -16,7 +16,7 @@ function contarArticulos() {
 }
 
 
-/* Javier */
+/* Cambios Realizados por Javier */
 // 1. Funcion para poder desplegar los temas de investigacion de forma animada al hacer click
 //    todo esto mediante una lista
 
