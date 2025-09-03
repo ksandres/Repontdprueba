@@ -36,10 +36,7 @@ table, th, td {
     padding: 8px;
 }
 
-
-
 /* Cambios realizados a algunas listas, textos y botones hecho por Javier */
-
 #temaInvestigacion ul {
     list-style-type: none;
     padding-left: 0;
@@ -58,4 +55,9 @@ table, th, td {
     cursor: default;
 }
 
-
+button {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
