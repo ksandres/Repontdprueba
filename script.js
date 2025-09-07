@@ -45,3 +45,33 @@ function mensajeTitulo() {
     alert("Este es el tema principal del proyecto");
 }
 
+// Funciones agregadas por Andrés Gámez
+
+// Validar formulario
+function validarFormulario(event) {
+  event.preventDefault();
+  let nombre = document.getElementById("nombre").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let mensaje = document.getElementById("mensaje").value.trim();
+
+  if (nombre === "" || email === "" || mensaje === "") {
+    alert("Por favor complete todos los campos antes de enviar.");
+    return false;
+  }
+
+  enviarMensaje();
+  resetearFormulario();
+}
+
+// Mostrar mensaje de confirmación
+function enviarMensaje() {
+  alert("¡Gracias por contactarnos! Tu mensaje fue enviado con éxito.");
+}
+
+// Resetear formulario
+function resetearFormulario() {
+  document.getElementById("formContacto").reset();
+}
+
+// Vincular validación al evento submit
+document.getElementById("formContacto").addEventListener("submit", validarFormulario);
